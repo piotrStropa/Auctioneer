@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+  <children>
+    <AnchorPane>
+      <children>
+            <ImageView fitHeight="720.0" fitWidth="1280.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/LS.jpg" />
+               </image></ImageView>
+            <ImageView fitHeight="53.0" fitWidth="194.0" layoutX="78.0" layoutY="666.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="666.0">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="93.0" fitWidth="104.0" layoutX="14.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/userIcon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="welcome" layoutX="101.0" layoutY="10.0" text="Witaj, Jan Kowalski!">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="messages" fitHeight="50.0" fitWidth="50.0" layoutX="115.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/msgIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="settings" fitHeight="50.0" fitWidth="50.0" layoutX="115.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/setIcon.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="367.0" layoutY="69.0" prefHeight="635.0" prefWidth="890.0">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="82.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/left.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="301.0" fitWidth="492.0" layoutX="196.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="713.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/right.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="165.0" layoutY="116.0" text=" Wiadomości" textFill="#464646">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="165.0" layoutY="60.0" text=" Ustawienia konta" textFill="#464646">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Line disable="true" endX="-70.79998779296875" endY="636.4000244140625" layoutX="414.0" layoutY="69.0" startX="-70.79998779296875" startY="-50.79999923706055" />
+            <Pane fx:id="auct1" layoutX="366.0" layoutY="60.0" maxHeight="100.0" maxWidth="900.0" minHeight="100.0" minWidth="900.0" prefHeight="100.0" prefWidth="900.0">
+               <children>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="268.0" layoutY="49.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="853.0" layoutY="50.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Label layoutX="113.0" layoutY="33.0" prefHeight="35.0" prefWidth="568.0" text="PLACEHOLDERPLACEHOLDERPLACEHOLDER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="697.0" layoutY="33.0" prefHeight="35.0" prefWidth="196.0" text="PRICE PLN">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="auct2" layoutX="366.0" layoutY="160.0" maxHeight="100.0" maxWidth="900.0" minHeight="100.0" minWidth="900.0" prefHeight="100.0" prefWidth="900.0">
+               <children>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="268.0" layoutY="49.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="853.0" layoutY="50.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Label layoutX="113.0" layoutY="33.0" prefHeight="35.0" prefWidth="568.0" text="PLACEHOLDERPLACEHOLDERPLACEHOLDER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="697.0" layoutY="33.0" prefHeight="35.0" prefWidth="196.0" text="PRICE PLN">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="auct3" layoutX="366.0" layoutY="260.0" maxHeight="100.0" maxWidth="900.0" minHeight="100.0" minWidth="900.0" prefHeight="100.0" prefWidth="900.0">
+               <children>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="268.0" layoutY="49.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="853.0" layoutY="50.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Label layoutX="113.0" layoutY="33.0" prefHeight="35.0" prefWidth="568.0" text="PLACEHOLDERPLACEHOLDERPLACEHOLDER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="697.0" layoutY="33.0" prefHeight="35.0" prefWidth="196.0" text="PRICE PLN">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="auct4" layoutX="366.0" layoutY="362.0" maxHeight="100.0" maxWidth="900.0" minHeight="100.0" minWidth="900.0" prefHeight="100.0" prefWidth="900.0">
+               <children>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="268.0" layoutY="49.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="853.0" layoutY="50.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Label layoutX="113.0" layoutY="33.0" prefHeight="35.0" prefWidth="568.0" text="PLACEHOLDERPLACEHOLDERPLACEHOLDER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="697.0" layoutY="33.0" prefHeight="35.0" prefWidth="196.0" text="PRICE PLN">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="auct5" layoutX="366.0" layoutY="462.0" maxHeight="100.0" maxWidth="900.0" minHeight="100.0" minWidth="900.0" prefHeight="100.0" prefWidth="900.0">
+               <children>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="268.0" layoutY="49.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="853.0" layoutY="50.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Label layoutX="113.0" layoutY="33.0" prefHeight="35.0" prefWidth="568.0" text="PLACEHOLDERPLACEHOLDERPLACEHOLDER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="697.0" layoutY="33.0" prefHeight="35.0" prefWidth="196.0" text="PRICE PLN">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="auct6" layoutX="366.0" layoutY="562.0" maxHeight="100.0" maxWidth="900.0" minHeight="100.0" minWidth="900.0" prefHeight="100.0" prefWidth="900.0">
+               <children>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="268.0" layoutY="49.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="853.0" layoutY="50.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Label layoutX="113.0" layoutY="33.0" prefHeight="35.0" prefWidth="568.0" text="PLACEHOLDERPLACEHOLDERPLACEHOLDER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="697.0" layoutY="33.0" prefHeight="35.0" prefWidth="196.0" text="PRICE PLN">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="forward" layoutX="1051.0" layoutY="662.0" mnemonicParsing="false" opacity="0.9" prefHeight="44.0" prefWidth="106.0" style="-fx-background-color: #757575;" text="Dalej" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="back" layoutX="465.0" layoutY="662.0" mnemonicParsing="false" opacity="0.9" prefHeight="44.0" prefWidth="106.0" style="-fx-background-color: #757575;" text="Wstecz" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="page" layoutX="583.0" layoutY="666.0" prefHeight="35.0" prefWidth="450.0" text="Strona X z Y" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="searchText" layoutX="366.0" layoutY="12.0" opacity="0.9" prefHeight="51.0" prefWidth="690.0" promptText="Wyszukaj aukcje..." style="-fx-background-color: #757575;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <Button fx:id="search" layoutX="1059.0" layoutY="16.0" mnemonicParsing="false" opacity="0.9" prefHeight="44.0" prefWidth="196.0" style="-fx-background-color: #65a468 #65a468;" text="Szukaj" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <ListView fx:id="categoryList" layoutX="15.0" layoutY="181.0" opacity="0.9" prefHeight="413.0" prefWidth="311.0" style="-fx-background-color: #757575;" />
+            <Label layoutX="101.0" layoutY="160.0" text="Wybór kategorii:" textFill="#464646">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="create" layoutX="17.0" layoutY="612.0" mnemonicParsing="false" opacity="0.9" prefHeight="44.0" prefWidth="311.0" style="-fx-background-color: #757575;" text="Utwórz nową aukcję" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="226.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

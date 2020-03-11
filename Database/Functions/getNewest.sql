@@ -1,0 +1,4 @@
+CREATE FUNCTION getNewest()
+RETURNS TABLE
+AS
+	RETURN (SELECT TOP 20 * FROM Auctions  WHERE expirationDate > GETDATE()  ORDER BY creationDate DESC )

@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+  <children>
+    <AnchorPane prefHeight="710.0" prefWidth="1282.0">
+      <children>
+            <ImageView fitHeight="720.0" fitWidth="1280.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/LS.jpg" />
+               </image></ImageView>
+            <ImageView fitHeight="53.0" fitWidth="194.0" layoutX="78.0" layoutY="666.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="666.0">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="93.0" fitWidth="104.0" layoutX="14.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/userIcon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="welcome" layoutX="101.0" layoutY="10.0" text="Witaj, Jan Kowalski!">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="messages" fitHeight="50.0" fitWidth="50.0" layoutX="115.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/msgIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="settings" fitHeight="50.0" fitWidth="50.0" layoutX="115.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/setIcon.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="auctionView" layoutX="367.0" layoutY="69.0" prefHeight="635.0" prefWidth="890.0" visible="false">
+               <children>
+                  <ImageView fx:id="left" fitHeight="100.0" fitWidth="100.0" layoutX="2.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/left.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="bidValue" alignment="CENTER" layoutX="645.0" layoutY="444.0" opacity="0.9" prefHeight="54.0" prefWidth="242.0" promptText="PLN" style="-fx-background-color: #757575;">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="bid" layoutX="645.0" layoutY="511.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="242.0" style="-fx-background-color: #a46565;" text="Przebij" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="title" alignment="CENTER" layoutX="52.0" layoutY="335.0" prefHeight="44.0" prefWidth="584.0" text="TITLEHOLDER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="picture" fitHeight="328.0" fitWidth="470.0" layoutX="90.0" layoutY="7.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/image.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="right" fitHeight="100.0" fitWidth="106.0" layoutX="521.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/right.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="auctionPrice" alignment="CENTER" layoutX="631.0" layoutY="335.0" prefHeight="44.0" prefWidth="262.0" text="PRICEHOLDER" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Line endX="33.0" endY="380.3999938964844" startX="892.199951171875" startY="380.3999938964844" />
+                  <Line endX="625.3999633789062" endY="607.2000122070312" layoutX="10.0" layoutY="10.0" startX="625.3999633789062" startY="6.1999969482421875" />
+                  <Label alignment="CENTER" layoutX="646.0" layoutY="390.0" prefHeight="54.0" prefWidth="242.0" text="Nowa cena:" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="description" alignment="TOP_LEFT" layoutX="33.0" layoutY="390.0" prefHeight="178.0" prefWidth="594.0" text="DESCRIPTIONHOLDER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="ask" alignment="CENTER" layoutX="653.0" layoutY="218.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="226.0" style="-fx-background-color: #a46565;" text="Zapytaj sprzedawcę" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="contact" alignment="CENTER" layoutX="646.0" layoutY="16.0" prefHeight="193.0" prefWidth="242.0" text="Kontakt:" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="backToMenu" layoutX="14.0" layoutY="569.0" mnemonicParsing="false" style="-fx-background-color: #757575;" text="Powrót" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="lastBid" layoutX="139.0" layoutY="567.0" prefHeight="54.0" prefWidth="485.0" text="Ostatni przebijający:  NAME S.">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="165.0" layoutY="116.0" text=" Wiadomości" textFill="#464646">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="165.0" layoutY="60.0" text=" Ustawienia konta" textFill="#464646">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Line disable="true" endX="-70.79998779296875" endY="636.4000244140625" layoutX="414.0" layoutY="69.0" startX="-70.79998779296875" startY="-50.79999923706055" />
+            <Pane fx:id="auct1" layoutX="366.0" layoutY="60.0" maxHeight="100.0" maxWidth="900.0" minHeight="100.0" minWidth="900.0" prefHeight="100.0" prefWidth="900.0" visible="false">
+               <children>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/photo.png" />
+                     </image></ImageView>
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="268.0" layoutY="49.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="853.0" layoutY="50.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Label layoutX="113.0" layoutY="33.0" prefHeight="35.0" prefWidth="568.0" text="PLACEHOLDERPLACEHOLDERPLACEHOLDER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="697.0" layoutY="33.0" prefHeight="35.0" prefWidth="196.0" text="PRICE PLN">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="auct2" layoutX="366.0" layoutY="160.0" maxHeight="100.0" maxWidth="900.0" minHeight="100.0" minWidth="900.0" prefHeight="100.0" prefWidth="900.0" visible="false">
+               <children>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/photo.png" />
+                     </image></ImageView>
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="268.0" layoutY="49.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="853.0" layoutY="50.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Label layoutX="113.0" layoutY="33.0" prefHeight="35.0" prefWidth="568.0" text="PLACEHOLDERPLACEHOLDERPLACEHOLDER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="697.0" layoutY="33.0" prefHeight="35.0" prefWidth="196.0" text="PRICE PLN">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="auct3" layoutX="366.0" layoutY="260.0" maxHeight="100.0" maxWidth="900.0" minHeight="100.0" minWidth="900.0" prefHeight="100.0" prefWidth="900.0" visible="false">
+               <children>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/photo.png" />
+                     </image></ImageView>
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="268.0" layoutY="49.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="853.0" layoutY="50.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Label layoutX="113.0" layoutY="33.0" prefHeight="35.0" prefWidth="568.0" text="PLACEHOLDERPLACEHOLDERPLACEHOLDER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="697.0" layoutY="33.0" prefHeight="35.0" prefWidth="196.0" text="PRICE PLN">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="auct4" layoutX="366.0" layoutY="362.0" maxHeight="100.0" maxWidth="900.0" minHeight="100.0" minWidth="900.0" prefHeight="100.0" prefWidth="900.0" visible="false">
+               <children>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/photo.png" />
+                     </image></ImageView>
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="268.0" layoutY="49.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="853.0" layoutY="50.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Label layoutX="113.0" layoutY="33.0" prefHeight="35.0" prefWidth="568.0" text="PLACEHOLDERPLACEHOLDERPLACEHOLDER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="697.0" layoutY="33.0" prefHeight="35.0" prefWidth="196.0" text="PRICE PLN">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="auct5" layoutX="366.0" layoutY="462.0" maxHeight="100.0" maxWidth="900.0" minHeight="100.0" minWidth="900.0" prefHeight="100.0" prefWidth="900.0" visible="false">
+               <children>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/photo.png" />
+                     </image></ImageView>
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="268.0" layoutY="49.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="853.0" layoutY="50.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Label layoutX="113.0" layoutY="33.0" prefHeight="35.0" prefWidth="568.0" text="PLACEHOLDERPLACEHOLDERPLACEHOLDER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="697.0" layoutY="33.0" prefHeight="35.0" prefWidth="196.0" text="PRICE PLN">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="auct6" layoutX="366.0" layoutY="562.0" maxHeight="100.0" maxWidth="900.0" minHeight="100.0" minWidth="900.0" prefHeight="100.0" prefWidth="900.0" visible="false">
+               <children>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/photo.png" />
+                     </image></ImageView>
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="268.0" layoutY="49.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Line endX="-164.20001220703125" endY="43.399993896484375" layoutX="853.0" layoutY="50.0" startX="-164.20001220703125" startY="-41.400001525878906" />
+                  <Label layoutX="113.0" layoutY="33.0" prefHeight="35.0" prefWidth="568.0" text="PLACEHOLDERPLACEHOLDERPLACEHOLDER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="697.0" layoutY="33.0" prefHeight="35.0" prefWidth="196.0" text="PRICE PLN">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="forward" layoutX="1051.0" layoutY="662.0" mnemonicParsing="false" opacity="0.9" prefHeight="44.0" prefWidth="106.0" style="-fx-background-color: #757575;" text="Dalej" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="back" layoutX="465.0" layoutY="662.0" mnemonicParsing="false" opacity="0.9" prefHeight="44.0" prefWidth="106.0" style="-fx-background-color: #757575;" text="Wstecz" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="page" layoutX="583.0" layoutY="666.0" prefHeight="35.0" prefWidth="450.0" text="Strona X z Y" textAlignment="CENTER" visible="false" wrapText="true">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="searchText" layoutX="366.0" layoutY="12.0" opacity="0.9" prefHeight="51.0" prefWidth="690.0" promptText="Wyszukaj aukcje..." style="-fx-background-color: #757575;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <Button fx:id="search" layoutX="1059.0" layoutY="14.0" mnemonicParsing="false" opacity="0.9" prefHeight="46.0" prefWidth="196.0" style="-fx-background-color: #65a468 #65a468;" text="Szukaj" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <ListView fx:id="categoryList" layoutX="15.0" layoutY="181.0" opacity="0.9" prefHeight="413.0" prefWidth="311.0" style="-fx-background-color: #757575;" />
+            <Label layoutX="101.0" layoutY="160.0" text="Wybór kategorii:" textFill="#464646">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="create" layoutX="17.0" layoutY="612.0" mnemonicParsing="false" opacity="0.9" prefHeight="44.0" prefWidth="311.0" style="-fx-background-color: #757575;" text="Utwórz nową aukcję" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <AnchorPane fx:id="messageView" layoutX="365.0" layoutY="78.0" prefHeight="626.0" prefWidth="900.0" visible="false">
+               <children>
+                  <TextField fx:id="messageTopic" layoutX="91.0" layoutY="101.0" opacity="0.9" prefHeight="51.0" prefWidth="690.0" promptText="Temat..." style="-fx-background-color: #757575;" text="Pytanie o PRODUCTNAME">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="send" layoutX="450.0" layoutY="546.0" mnemonicParsing="false" opacity="0.9" prefHeight="54.0" prefWidth="330.0" style="-fx-background-color: #65a468 #65a468;" text="Wyślij" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancel" layoutX="91.0" layoutY="547.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="346.0" style="-fx-background-color: #a46565;" text="Anuluj" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="335.0" layoutY="59.0" text="Zapytaj o produkt" textFill="#464646">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="messageContent" layoutX="90.0" layoutY="164.0" prefHeight="370.0" prefWidth="690.0" promptText="Treść wiadomości..." style="-fx-background-color: #757575;" stylesheets="@style.css">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="createView" layoutX="366.0" layoutY="78.0" prefHeight="626.0" prefWidth="900.0" visible="false">
+               <children>
+                  <TextField fx:id="productName" layoutX="88.0" layoutY="94.0" opacity="0.9" prefHeight="51.0" prefWidth="690.0" promptText="Nazwa produktu..." style="-fx-background-color: #757575;">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="88.0" layoutY="59.0" text="Parametry aukcji:">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="addPhoto" fitHeight="114.0" fitWidth="127.0" layoutX="669.0" layoutY="472.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/addPhoto.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="startingPrice" layoutX="88.0" layoutY="478.0" opacity="0.9" prefHeight="51.0" prefWidth="378.0" promptText="Początkowa cena...." style="-fx-background-color: #757575;">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="expirationDate" layoutX="88.0" layoutY="539.0" opacity="0.9" prefHeight="51.0" prefWidth="378.0" promptText="Data zakończenia DD/MM/RRRR" style="-fx-background-color: #757575;">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="save" layoutX="473.0" layoutY="478.0" mnemonicParsing="false" opacity="0.9" prefHeight="51.0" prefWidth="196.0" style="-fx-background-color: #65a468 #65a468;" text="Zapisz" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="decline" layoutX="473.0" layoutY="539.0" mnemonicParsing="false" opacity="0.9" prefHeight="51.0" prefWidth="196.0" style="-fx-background-color: #a46565 #a46565;" text="Anuluj" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <TextArea fx:id="productDescription" layoutX="88.0" layoutY="152.0" prefHeight="230.0" prefWidth="690.0" promptText="Opis produktu..." style="-fx-background-color: #757575;" stylesheets="@style.css">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextArea>
+                  <ChoiceBox fx:id="addressSet" layoutX="263.0" layoutY="392.0" prefHeight="35.0" prefWidth="514.0" style="-fx-background-color: #757575;" />
+                  <Label layoutX="88.0" layoutY="392.0" text="Wybierz adres:">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="categorySet" layoutX="308.0" layoutY="436.0" prefHeight="35.0" prefWidth="470.0" style="-fx-background-color: #757575;" />
+                  <Label layoutX="88.0" layoutY="436.0" text="Wybierz kategorię:">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane fx:id="settingsView" layoutX="352.0" layoutY="69.0" prefHeight="635.0" prefWidth="914.0" visible="false">
+               <children>
+                  <ListView fx:id="addressList" layoutX="30.0" layoutY="32.0" prefHeight="200.0" prefWidth="346.0" style="-fx-background-color: #757575;" />
+                  <Label layoutX="29.0" layoutY="14.0" text="Adresy:" textFill="#464646">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="auctionList" layoutX="30.0" layoutY="318.0" prefHeight="209.0" prefWidth="346.0" style="-fx-background-color: #757575;" />
+                  <Label layoutX="30.0" layoutY="300.0" text="Aukcje:" textFill="#464646">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="deleteAuction" layoutX="30.0" layoutY="544.0" mnemonicParsing="false" opacity="0.9" prefHeight="44.0" prefWidth="346.0" style="-fx-background-color: #a46565;" text="Usuń aukcję" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="deleteAddress" layoutX="30.0" layoutY="245.0" mnemonicParsing="false" opacity="0.9" prefHeight="44.0" prefWidth="346.0" style="-fx-background-color: #a46565;" text="Usuń adres" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="490.0" layoutY="14.0" text="Utwórz nowy adres:" textFill="#464646">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="firstLane" layoutX="490.0" layoutY="32.0" opacity="0.9" prefHeight="51.0" prefWidth="338.0" promptText="Ulica/Wieś" style="-fx-background-color: #757575;">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="secondLane" layoutX="490.0" layoutY="90.0" opacity="0.9" prefHeight="51.0" prefWidth="338.0" promptText="Numer mieszkania/domu" style="-fx-background-color: #757575;">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="zipCode" layoutX="490.0" layoutY="149.0" opacity="0.9" prefHeight="51.0" prefWidth="338.0" promptText="Kod pocztowy(bez myślnika)" style="-fx-background-color: #757575;">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="city" layoutX="490.0" layoutY="206.0" opacity="0.9" prefHeight="51.0" prefWidth="338.0" promptText="Miasto" style="-fx-background-color: #757575;">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="createAddress" layoutX="494.0" layoutY="267.0" mnemonicParsing="false" opacity="0.9" prefHeight="44.0" prefWidth="330.0" style="-fx-background-color: #65a468 #65a468;" text="Stwórz adres" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="back1" layoutX="656.0" layoutY="544.0" mnemonicParsing="false" opacity="0.9" prefHeight="44.0" prefWidth="167.0" style="-fx-background-color: #757575;" text="Powrót" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="receivedView" layoutX="352.0" layoutY="69.0" prefHeight="635.0" prefWidth="914.0" visible="false">
+               <children>
+                  <ListView fx:id="messageList" layoutX="26.0" layoutY="108.0" prefHeight="478.0" prefWidth="417.0" style="-fx-background-color: #757575;" />
+                  <Label layoutX="156.0" layoutY="74.0" text=" Wiadomości:" textFill="#464646">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Line endX="345.199951171875" layoutX="558.0" layoutY="182.0" startX="-100.0" />
+                  <Label fx:id="topicReceive" layoutX="457.0" layoutY="145.0" prefHeight="27.0" prefWidth="446.0" text="Temat" textFill="#464646">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="auctionReceive" layoutX="457.0" layoutY="191.0" prefHeight="27.0" prefWidth="446.0" text="Aukcja" textFill="#464646">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Line endX="345.199951171875" layoutX="557.0" layoutY="225.0" startX="-100.0" />
+                  <Label fx:id="descriptionReceive" alignment="TOP_LEFT" layoutX="457.0" layoutY="234.0" prefHeight="302.0" prefWidth="446.0" text="Treść" textFill="#464646" wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="back2" layoutX="739.0" layoutY="541.0" mnemonicParsing="false" opacity="0.9" prefHeight="44.0" prefWidth="167.0" style="-fx-background-color: #757575;" text="Powrót" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="reply" layoutX="453.0" layoutY="541.0" mnemonicParsing="false" opacity="0.9" prefHeight="44.0" prefWidth="277.0" style="-fx-background-color: #65a468 #65a468;" text="Odpowiedz" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

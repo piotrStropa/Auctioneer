@@ -1,0 +1,4 @@
+CREATE FUNCTION getUserByID(@id Integer)
+RETURNS TABLE
+AS
+RETURN (SELECT * FROM Users WHERE @id = userID)

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+  <children>
+    <AnchorPane>
+      <children>
+            <PasswordField prefHeight="51.0" prefWidth="0.0" style="-fx-background-color: #757575;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </PasswordField>
+            <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/LS.jpg" />
+               </image></ImageView>
+            <ImageView fitHeight="150.0" fitWidth="1000.0" layoutX="371.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="370.0" AnchorPane.topAnchor="50.0">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="loginCreate" layoutX="440.0" layoutY="227.0" prefHeight="30.0" prefWidth="400.0" promptText="Login" style="-fx-background-color: #757575;">
+               <font>
+                  <Font size="24.0" />
+               </font></TextField>
+            <PasswordField fx:id="passwordCreate" layoutX="440.0" layoutY="290.0" prefHeight="30.0" prefWidth="400.0" promptText="Hasło" style="-fx-background-color: #757575;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="nameCreate" layoutX="440.0" layoutY="354.0" prefHeight="30.0" prefWidth="400.0" promptText="Imię" style="-fx-background-color: #757575;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="surnameCreate" layoutX="440.0" layoutY="417.0" prefHeight="30.0" prefWidth="400.0" promptText="Nazwisko" style="-fx-background-color: #757575;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <Button fx:id="confirmCreate" layoutX="440.0" layoutY="551.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="256.0" style="-fx-background-color: #65a468;" text="Utwórz konto">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="backButton" layoutX="701.0" layoutY="551.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="138.0" style="-fx-background-color: #a46565;" text="Wróć">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Label fx:id="warning" layoutX="470.0" layoutY="200.0" text="Użytkownik o podanym loginie już istnieje" textFill="#da0000" visible="false">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
