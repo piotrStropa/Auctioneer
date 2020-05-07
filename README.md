@@ -7,7 +7,7 @@ Auctioneer database with JavaFX client
 * transactional bidding
 * send direct messages
 
-## Built with:
+## Built with
 * Microsoft SQL Server (database, stored procedures, transactions)
 * Hibernate (data mapping)
 * JavaFX (user interface)
