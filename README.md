@@ -9,6 +9,6 @@ Auctioneer database with JavaFX client
 
 ## Built with
 * Microsoft SQL Server (database, stored procedures, transactions)
-* Hibernate (data mapping)
+* Hibernate (data access and mapping)
 * JavaFX (user interface)
 * Maven (dependency management)
