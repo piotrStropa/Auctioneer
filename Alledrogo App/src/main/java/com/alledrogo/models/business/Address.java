@@ -75,4 +75,61 @@ public class Address {
     public void setCity(String city) {
         this.city = city;
     }
+
+    public static final class AddressBuilder {
+        private int addressID;
+        private int userID;
+        private String addressFirstLane;
+        private String addressSecondLane;
+        private String zipCode;
+        private String city;
+
+        private AddressBuilder() {
+        }
+
+        public static AddressBuilder anAddress() {
+            return new AddressBuilder();
+        }
+
+        public AddressBuilder withAddressID(int addressID) {
+            this.addressID = addressID;
+            return this;
+        }
+
+        public AddressBuilder withUserID(int userID) {
+            this.userID = userID;
+            return this;
+        }
+
+        public AddressBuilder withAddressFirstLane(String addressFirstLane) {
+            this.addressFirstLane = addressFirstLane;
+            return this;
+        }
+
+        public AddressBuilder withAddressSecondLane(String addressSecondLane) {
+            this.addressSecondLane = addressSecondLane;
+            return this;
+        }
+
+        public AddressBuilder withZipCode(String zipCode) {
+            this.zipCode = zipCode;
+            return this;
+        }
+
+        public AddressBuilder withCity(String city) {
+            this.city = city;
+            return this;
+        }
+
+        public Address build() {
+            Address address = new Address();
+            address.setAddressID(addressID);
+            address.setUserID(userID);
+            address.setAddressFirstLane(addressFirstLane);
+            address.setAddressSecondLane(addressSecondLane);
+            address.setZipCode(zipCode);
+            address.setCity(city);
+            return address;
+        }
+    }
 }
